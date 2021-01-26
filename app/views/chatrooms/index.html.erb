@@ -7,17 +7,7 @@
   <div class="twelve wide column">
     <div class="ui card fluid raised chatbox">
       <div class="content">
-        <% @messages.each do |message| %>
-          <div class="ui feed">
-            <div class="event">
-              <div class="content">
-                <div class="summary">
-                  <em><%= message.user.username %></em> : <%= message.body %>
-                </div>
-              </div>
-            </div>
-          </div>
-        <% end %>        
+        <%= render @messages %>     
       </div>
 
       <div class="extra content">
